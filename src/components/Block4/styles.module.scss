@@ -23,12 +23,16 @@
       text-shadow: none;
       text-shadow: 3px 3px 0px #e85b5b;
       margin: 0;
+
+      span {
+        font-size: 30px;
+      }
     }
 
     h2 {
       font-family: "Bodoni";
       font-size: 55px;
-      text-shadow: 4px 3px 0px #fbc8c8;
+      text-shadow: 4px 3px 0px #e85b5b;
       position: relative;
       z-index: 1;
       text-align: center;
@@ -38,7 +42,7 @@
     h4 {
       font-family: "Bodoni";
       font-size: 25px;
-      text-shadow: 4px 3px 0px #fbc8c8;
+      text-shadow: 4px 3px 0px #e85b5b;
       position: relative;
       z-index: 1;
       text-align: center;
@@ -49,6 +53,12 @@
   .truck {
     position: absolute;
     bottom: 60px;
-    right: 0;
+    right: -100%;
+    transition: right 500ms ease-in-out;
+    transition-delay: 500ms;
+
+    &[data-visible="true"] {
+      right: 0;
+    }
   }
 }

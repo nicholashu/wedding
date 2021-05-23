@@ -32,6 +32,22 @@
     position: relative;
     width: 600px;
     height: 500px;
-    border-radius: 440px 360px 260px 197px;
+    animation: morph 6s ease-in-out infinite;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transition: border-radius 1s ease-in-out;
   }
+}
+
+@keyframes morph {
+  0% {
+    border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+    } 
+
+    50% {
+    border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+      border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+    } 
 }

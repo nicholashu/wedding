@@ -1,4 +1,6 @@
 .third {
+  position: relative;
+
   .heading {
     display: flex;
     justify-content: center;
@@ -17,8 +19,14 @@
       font-family: 'Helvetica';
       color: white;
       text-shadow: none;
-      position: absolute;
       text-shadow: 3px 3px 0px #e85b5b;
+      margin: 0;
+    }
+
+    h3 {
+      font-size: 30px;
+      text-shadow: 3px 3px 0px #e85b5b;
+      margin: 0;
     }
   }
 }
