@@ -8,11 +8,11 @@ import styles from './styles.module.scss';
 
 const Block3 = () => {
   const { width, height } = useWindowSize();
-  const [isInViewport, blockRef] = UseIsInViewPort({ threshold: 50 });
+  const [isInViewport, blockRef] = UseIsInViewPort({ threshold: 0 });
 
   return (
-    <Block bg="#caeaca">
-      <div className={styles.third} ref={blockRef}>
+    <Block bg="#caeaca" bubbleRef={blockRef}>
+      <div className={styles.third}>
         {isInViewport && (
           <>
           <Confetti

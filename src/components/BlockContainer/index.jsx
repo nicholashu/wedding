@@ -2,9 +2,9 @@ import React from 'react';
 
 import styles from './styles.module.scss';
 
-const Block = ({ bg, children }) => {
+const Block = ({ bg, bubbleRef, children }) => {
   return (
-    <div className={styles.block} style={{ backgroundColor: bg }}>
+    <div ref={bubbleRef} className={styles.block} style={{ backgroundColor: bg }}>
       <div className={styles.content}>
         {children}
       </div>
