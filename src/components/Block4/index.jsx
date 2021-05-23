@@ -15,7 +15,10 @@ const Block3 = () => {
         <div className={styles.heading}>
           <h1>
             CECCHELE MOTORS
-            <span>&nbsp;CARPARK</span>
+            <span>
+              <br className={styles.mobileBreak} />
+              &nbsp;CARPARK
+            </span>
           </h1>
           <h2>29 PALMERSTON STREET</h2>
           <br/>

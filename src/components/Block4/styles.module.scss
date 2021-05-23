@@ -1,3 +1,5 @@
+@import 'assets/styles/responsive.scss';
+
 .fourth {
   position: relative;
   
@@ -24,8 +26,25 @@
       text-shadow: 3px 3px 0px #e85b5b;
       margin: 0;
 
+      @include mobile {
+        font-size: 50px;
+        text-align: center;
+      }
+
       span {
         font-size: 30px;
+
+        @include mobile {
+          font-size: 25px;
+        }
+      }
+    }
+
+    .mobileBreak {
+      display: none;
+
+      @include mobile {
+        display: initial;
       }
     }
 
@@ -37,6 +56,11 @@
       z-index: 1;
       text-align: center;
       margin: 0;
+
+      @include mobile {
+        font-size: 35px;
+        margin-top: 24px;
+      }
     }
     
     h4 {
@@ -59,6 +83,15 @@
 
     &[data-visible="true"] {
       right: 0;
+
+      @include mobile {
+        right: -20px;
+      }
+    }
+
+    @include mobile {
+      bottom: 10%;
+      height: 200px;
     }
   }
 }
