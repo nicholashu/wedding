@@ -1,0 +1,37 @@
+.second {
+
+  .heading {
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+
+    h1 {
+      font-size: 75px;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      font-family: 'Helvetica';
+      color: white;
+      text-shadow: none;
+      position: absolute;
+      left: -200px;
+      text-shadow: 3px 3px 0px #e85b5b;
+    }
+  }
+
+  
+  .offsetBox {
+    background-color: #33a733;
+    background-image: url('assets/images/dance.png');
+    background-size: cover;
+    background-repeat: none;
+    background-blend-mode: hard-light;
+    position: relative;
+    width: 600px;
+    height: 500px;
+    border-radius: 440px 360px 260px 197px;
+  }
+}

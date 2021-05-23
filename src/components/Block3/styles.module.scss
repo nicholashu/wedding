@@ -1,0 +1,24 @@
+.third {
+  .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: white;
+    opacity: 1;
+    text-align: center;
+
+    h1 {
+      font-size: 75px;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      font-family: 'Helvetica';
+      color: white;
+      text-shadow: none;
+      position: absolute;
+      text-shadow: 3px 3px 0px #e85b5b;
+    }
+  }
+}

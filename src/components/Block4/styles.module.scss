@@ -1,0 +1,54 @@
+.fourth {
+  position: relative;
+  
+  .heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    flex-direction: column;
+    color: white;
+    opacity: 1;
+    text-align: center;
+    z-index: 1;
+    padding-top: 80px;
+
+    h1 {
+      font-size: 75px;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      font-family: 'Helvetica';
+      color: white;
+      text-shadow: none;
+      text-shadow: 3px 3px 0px #e85b5b;
+      margin: 0;
+    }
+
+    h2 {
+      font-family: "Bodoni";
+      font-size: 55px;
+      text-shadow: 4px 3px 0px #fbc8c8;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      margin: 0;
+    }
+    
+    h4 {
+      font-family: "Bodoni";
+      font-size: 25px;
+      text-shadow: 4px 3px 0px #fbc8c8;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      margin: 0;
+    }    
+  }
+    
+  .truck {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+  }
+}
