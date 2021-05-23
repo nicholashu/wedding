@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 
 import Layout from 'components/Layout';
 import Container from 'components/Container';
+
+import Winnie from 'components/Winnie';
+
+import ProfileImage from 'assets/images/profile.png';
+import Hearts from 'assets/images/hearts.png';
+import Truck from 'assets/images/truck.png';
 
 import './styles.scss';
 
@@ -10,10 +16,9 @@ const IndexPage = () => {
   return (
     <Layout pageName="home">
       <Helmet>
-        <title>Home Page</title>
+        <title>Britt &amp; Nick's Wedding</title>
       </Helmet>
       <Container>
-      <audio id="player" src="Pérez Prado - Patricia.mp3" ></audio>
       <div class="block first">
         <div class="content">
           <div class="heading">
@@ -21,14 +26,12 @@ const IndexPage = () => {
               BRITTANY FREEMAN
             </h1>
             <div class="frame noisy">
-              <img src="profile.png" />
+              <img src={ProfileImage} />
             </div>
             <h1>NICHOLAS HU</h1>
           </div>
-          <img class="hearts" src="hearts.png" />
-          <button class="winnie" onclick="document.getElementById('player').play()">
-            <img src="winnie-click.png" />
-          </button> 
+          <img class="hearts" src={Hearts} />
+         <Winnie />
         </div>
       </div>
 
@@ -65,7 +68,7 @@ const IndexPage = () => {
             <h4>21 NOVEMBER 2021 @ 4PM</h4>
           </div>
         </div>
-        <img class="truck" src="truck.png" />
+        <img class="truck" src={Truck} />
       </div>
       </Container>
     </Layout>

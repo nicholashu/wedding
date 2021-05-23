@@ -1,0 +1,49 @@
+.winnie {
+  position: absolute;
+  left: 50px;
+  width: 150px;
+  bottom: 10px;
+  opacity: 0.85;
+  background: none;
+  border: none;
+  cursor: pointer;
+  
+  img {
+    width: 100%;
+  }
+  
+  &:hover {
+    animation: shake 300ms;
+  }
+
+  .meow {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    background: #fffbfb;
+    padding: 6px 12px;
+    font-size: 20px;
+    transform: rotate(351deg);
+    color: #ca2026;
+    border: solid 2px #ca2026;
+  }
+}
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
