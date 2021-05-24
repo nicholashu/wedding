@@ -1,0 +1,43 @@
+@import 'assets/styles/responsive.scss';
+
+.third {
+  position: relative;
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: white;
+    opacity: 1;
+    text-align: center;
+
+    h1 {
+      font-size: 75px;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      font-family: 'Helvetica';
+      color: white;
+      text-shadow: none;
+      text-shadow: 3px 3px 0px #e85b5b;
+      margin: 0;
+
+      @include mobile {
+        font-size: 50px;
+      }
+    }
+
+    h3 {
+      font-size: 30px;
+      text-shadow: 3px 3px 0px #e85b5b;
+      margin: 0;
+
+      @include mobile {
+        font-size: 20px;
+        margin-top: 12px;
+      }
+    }
+  }
+}

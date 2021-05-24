@@ -6,7 +6,7 @@ import Block from '../BlockContainer';
 
 import styles from './styles.module.scss';
 
-const Block3 = () => {
+const Block6 = () => {
   const { width, height } = useWindowSize();
   const [isInViewport, blockRef] = UseIsInViewPort({ threshold: 0 });
 
@@ -24,12 +24,12 @@ const Block3 = () => {
         )}
         <div className={styles.heading}>
           <h1>
-            CELEBRATE WITH US!
+            Details
           </h1>
-          <h3>*ceremony not included</h3>
+          <h3>Placeholder text</h3>
         </div>
       </div>
     </Block>
   );
 }
-export default Block3;
+export default Block6;
