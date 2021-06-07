@@ -2,7 +2,7 @@ import React from 'react';
 
 import Winnie from 'components/Winnie';
 import Block from '../BlockContainer';
-import ProfileImage from 'assets/images/profile.png';
+import ProfileImage from 'assets/images/sunglasses.gif';
 import Hearts from 'assets/images/hearts.png';
 
 import styles from './styles.module.scss';
@@ -16,11 +16,11 @@ const Block1 = () => {
             BRITTANY FREEMAN
           </h1>
           <div className={styles.frame}>
-            <img src={ProfileImage} />
+            <img src={ProfileImage} alt="nick + britt"/>
           </div>
           <h1>NICHOLAS HU</h1>
         </div>
-        <img className={styles.hearts} src={Hearts} />
+        <img className={styles.hearts} src={Hearts} alt="heart"/>
         <Winnie />
       </div>
     </Block>

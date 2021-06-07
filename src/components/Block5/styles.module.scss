@@ -1,9 +1,11 @@
+@import 'assets/styles/responsive.scss';
+
 .fifth {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 
   h1 {
     color: white;
@@ -17,6 +19,15 @@
     padding: 24px;
     display: flex;
     flex-direction: column;
+
+    .loading {
+      text-align: center;
+
+      img {
+        max-height: 300px;
+        margin: auto;
+      }
+    }
 
     h1 {
       font-family: "Bodoni";
@@ -48,6 +59,19 @@
     textarea {
       min-height: 80px;
     };
+
+    .checks {
+      display: flex;
+
+      label {
+        display: flex;
+        align-items: center;
+        
+        @include mobile {
+          font-size: 15px;
+        }
+      }
+    }
 
     button {
       margin: 12px;

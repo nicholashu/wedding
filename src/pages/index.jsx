@@ -20,8 +20,8 @@ const IndexPage = () => {
       </Helmet>
       <Container>
         <Block1 />
-        <Block2 />
         <Block3 />
+        <Block2 />
         <Block4 />
         <Block6 />
         <Block5 />

@@ -24,7 +24,7 @@ const Block3 = () => {
           <br/>
           <h4>21 NOVEMBER 2021 @ 4PM</h4>
         </div>
-        <img className={styles.truck} src={Truck} data-visible={isInViewport}/>
+        <img className={styles.truck} src={Truck} data-visible={isInViewport} alt="truck"/>
       </div>
     </Block>
   );

@@ -6,12 +6,13 @@ import styles from './styles.module.scss';
 
 const Block2 = () => {
   return (
-    <Block bg="#ff7075">
+    <Block bg="transparent">
+      <div className={styles.bg}/>
       <div className={styles.second}>
         <div className={styles.heading}>
           <div className={styles.offsetBox}>
             <h1>
-              ARE GETTING MARRIED!
+              CELEBRATE WITH US!
             </h1>
           </div>
         </div>

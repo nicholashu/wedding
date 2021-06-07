@@ -22,7 +22,7 @@ const Winnie  = () => {
       <audio ref={audio} src={Audio}></audio>
       <button className={styles.winnie} onClick={toggleAudio}>
         {playAudio && <span className={styles.meow}>MEOW!</span>}
-        <img src={WinnieImage} />
+        <img src={WinnieImage} alt="winnie"/>
       </button> 
     </>
   )

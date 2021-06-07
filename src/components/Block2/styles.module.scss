@@ -1,15 +1,30 @@
 @import 'assets/styles/responsive.scss';
 
+.bg {
+  z-index: -1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(assets/images/bg.gif);
+  background-color: #68b763;
+  background-blend-mode: lighten;
+  left: 0;
+}
+
 .second {
   .heading {
-    opacity: 0.8;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
 
+    @include mobile {
+      height: 80vh;
+    }
+
     h1 {
+      opacity: 0.9;
       font-size: 75px;
       position: relative;
       z-index: 1;
@@ -18,24 +33,23 @@
       color: white;
       text-shadow: none;
       position: absolute;
-      left: -200px;
       text-shadow: 3px 3px 0px #e85b5b;
+      text-align: left;
 
       @include mobile {
-        font-size: 50px;
-        left: -30px;
+        font-size: 46px;
+        left: -10px;
         top: -80px;
+        text-align: left;
       }
     }
   }
 
   
   .offsetBox {
-    background-color: #33a733;
-    background-image: url('assets/images/dance.png');
+    background-image: url('assets/images/kiss.gif');
     background-size: cover;
-    background-repeat: none;
-    background-blend-mode: hard-light;
+    background-repeat: no-repeat;
     position: relative;
     width: 600px;
     height: 500px;
