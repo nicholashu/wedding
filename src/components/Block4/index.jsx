@@ -22,7 +22,7 @@ const Block3 = () => {
           </h1>
           <h2>29 PALMERSTON STREET</h2>
           <br/>
-          <h4>21 NOVEMBER 2021 @ 4PM</h4>
+          <h4>21 NOVEMBER 2021 @ 6PM</h4>
         </div>
         <img className={styles.truck} src={Truck} data-visible={isInViewport} alt="truck"/>
       </div>
