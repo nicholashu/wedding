@@ -10,6 +10,8 @@ import Block4 from 'components/Block4';
 import Block5 from 'components/Block5';
 import Block6 from 'components/Block6';
 
+import Fav from 'assets/images/heart.ico';
+
 import './styles.scss';
 
 const IndexPage = () => {
@@ -17,6 +19,7 @@ const IndexPage = () => {
     <Layout pageName="home">
       <Helmet>
         <title>Britt &amp; Nick's Wedding</title>
+        <link rel="shortcut icon" href={Fav} />
       </Helmet>
       <Container>
         <Block1 />

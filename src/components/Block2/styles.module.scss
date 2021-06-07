@@ -4,7 +4,7 @@
   z-index: -1;
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(assets/images/bg.gif);
   background-color: #68b763;
   background-blend-mode: lighten;
@@ -16,11 +16,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
 
     @include mobile {
-      height: 80vh;
+      min-height: 80vh;
     }
 
     h1 {
