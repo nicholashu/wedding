@@ -72,7 +72,7 @@ const Block5 = () => {
                 <textarea
                   id="message"
                   name="message"
-                  placeholder={`What song do you want to hear?\nIs there anything else we need to know?\nAnything else?`}
+                  placeholder={`What song do you want to hear?\nIs there anything else we need to know?`}
                   row={4}
                 />
                 <ValidationError 
