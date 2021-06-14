@@ -27,11 +27,12 @@ const Block3 = () => {
             <a 
               href="https://www.google.com/maps/@-31.9440427,115.8563222,3a,75y,35.1h,94.75t/data=!3m6!1e1!3m4!1saYyNgyWUQm79Szd2mx3Xjw!2e0!7i16384!8i8192"
               target="_blank"
+              rel="noreferrer"
             >
               VIEW MAP
             </a>
+            <img className={styles.truck} src={Truck} data-visible={isInViewport} alt="truck"/>
           </div>
-          <img className={styles.truck} src={Truck} data-visible={isInViewport} alt="truck"/>
         </div>
       </div>
     </Block>
