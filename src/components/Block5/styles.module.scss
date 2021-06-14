@@ -22,7 +22,8 @@
     flex-direction: column;
 
     @include mobile {
-      width: 100%;
+      width: 100vw;
+      max-width: 375px;
     }
 
     .loading {
