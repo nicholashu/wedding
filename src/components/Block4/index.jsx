@@ -7,7 +7,7 @@ import Truck from 'assets/images/truck.png';
 import styles from './styles.module.scss';
 
 const Block3 = () => {
-  const [isInViewport, blockRef] = UseIsInViewPort({ threshold: 20 });
+  const [isInViewport, blockRef] = UseIsInViewPort({ threshold: 50 });
 
   return (
     <Block bg="#ff9c9c">
