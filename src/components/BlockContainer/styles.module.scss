@@ -3,7 +3,10 @@
 .block {
   min-height: 100vh;
   min-width: 100%;
+  display: flex;
+  align-items: center;
   overflow-x: hidden;
+  
   @include mobile {
     min-height: 50vh;
   }

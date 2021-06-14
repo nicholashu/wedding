@@ -2,12 +2,16 @@
 
 .fourth {
   position: relative;
+
+  .container {
+    max-height: 750px;
+  }
   
   .heading {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    min-height: calc(100vh - 80px);
+    min-height: calc(750px - 80px);
     flex-direction: column;
     color: white;
     opacity: 1;
@@ -75,12 +79,23 @@
       z-index: 1;
       text-align: center;
       margin: 0;
-    }    
+    }
+
+    a {
+      color: white;
+      font-weight: bold;
+      font-size: 1.28rem;
+      margin-top: 12px;
+      font-family: 'Helvetica';
+      color: white;
+      text-shadow: none;
+      text-shadow: 3px 3px 0px #e85b5b;
+    }
   }
     
   .truck {
     position: absolute;
-    bottom: 0px;
+    bottom: 5%;
     right: -100%;
     transition: right 500ms ease-in-out;
     transition-delay: 500ms;
