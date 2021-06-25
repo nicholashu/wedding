@@ -40,7 +40,7 @@ const Block5 = () => {
         {submitted ? (
           <h1>{going === "attending" ? "Thanks! Can't wait to see you there :)" : "Oh Shame! Catch up soon, OK?"}</h1>
         ) : (
-          <form ref={form} name="enquiryForm" onSubmit={handleSubmit} data-netlify-honeypot="bot-field" data-netlify="true">
+          <form ref={form} name="rsvp" onSubmit={handleSubmit} data-netlify-honeypot="bot-field" data-netlify="true">
           <input type="hidden" name="form-name" value="rsvp" />
           <h1>RSVP</h1>
             {loading ? (
