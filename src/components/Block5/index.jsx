@@ -1,23 +1,49 @@
-import React, { useState } from 'react';
-import { useForm, ValidationError } from '@formspree/react';
+import React, { useState, useRef } from 'react';
 import Loading from 'assets/images/loading.gif';
 import Block from '../BlockContainer';
 
 import styles from './styles.module.scss';
 
 const Block5 = () => {
-  const [state, handleSubmit] = useForm("xoqyegjo");
   const [going, setGoing] = useState();
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const form = useRef(null)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    const formData = new FormData(form.current);
+
+    function encode(data) {
+      return Object.keys(data)
+        .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&")
+    }
+
+    await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": "rsvp",
+        ...Object.fromEntries(formData.entries()),
+      }),
+    })
+    setSubmitted(true);
+    setLoading(true);
+  };
 
   return (
     <Block bg="#fbc8c8">
       <div className={styles.fifth}>
-        {state.succeeded ? (
+        {submitted ? (
           <h1>{going === "attending" ? "Thanks! Can't wait to see you there :)" : "Oh Shame! Catch up soon, OK?"}</h1>
         ) : (
-          <form onSubmit={handleSubmit}>
+          <form ref={form} name="enquiryForm" onSubmit={handleSubmit} data-netlify-honeypot="bot-field" data-netlify="true">
+          <input type="hidden" name="form-name" value="rsvp" />
           <h1>RSVP</h1>
-            {state.submitting ? (
+            {loading ? (
               <div className={styles.loading}>
                 <img src={Loading} alt="loading" />
               </div>
@@ -38,11 +64,6 @@ const Block5 = () => {
                   id="email"
                   type="email" 
                   name="email"
-                />
-                <ValidationError 
-                  prefix="Email" 
-                  field="email"
-                  errors={state.errors}
                 />
                 <div className={styles.checks}>
                   <label htmlFor="attenting">
@@ -75,12 +96,7 @@ const Block5 = () => {
                   placeholder={`What song do you want to hear?\nIs there anything else we need to know?`}
                   row={4}
                 />
-                <ValidationError 
-                  prefix="Message" 
-                  field="message"
-                  errors={state.errors}
-                />
-                <button type="submit" disabled={state.submitting}>
+                <button type="submit" disabled={loading}>
                   Submit
                 </button>
               </>
