@@ -31,7 +31,7 @@ const Block5 = () => {
       }),
     })
     setSubmitted(true);
-    setLoading(true);
+    setLoading(false);
   };
 
   return (
