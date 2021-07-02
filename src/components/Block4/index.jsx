@@ -23,7 +23,7 @@ const Block3 = () => {
             </h1>
             <h2>29 PALMERSTON STREET</h2>
             <br/>
-            <h4>21 NOVEMBER 2021 @ 6PM</h4>
+            <h4>20 NOVEMBER 2021 @ 6PM</h4>
             <a 
               href="https://www.google.com/maps/@-31.9440427,115.8563222,3a,75y,35.1h,94.75t/data=!3m6!1e1!3m4!1saYyNgyWUQm79Szd2mx3Xjw!2e0!7i16384!8i8192"
               target="_blank"
