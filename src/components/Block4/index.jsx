@@ -22,6 +22,7 @@ const Block3 = () => {
               </span>
             </h1>
             <h2>29 PALMERSTON STREET</h2>
+            <h3>VIA NEWCASTLE STREET</h3>
             <br/>
             <h4>20 NOVEMBER 2021 @ 6PM</h4>
             <a 
